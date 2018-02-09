@@ -1,0 +1,8 @@
+/node_modules/**/*
+/public/**/*
+/src/images/**/*
+/src/fonts/**/*
+/build/**/*
+/dist/**/*
+*.css
+*.md
