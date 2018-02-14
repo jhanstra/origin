@@ -4,10 +4,9 @@
   "description": "app-description###",
   "main": "server/server.js",
   "scripts": {
-    "build-server": "babel-node server.js --presets es2016,stage-2",
+    "build-server": "rimraf dist/ && babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start-server": "rimraf dist/ && nodemon server.js --exec babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "run start-server",
-    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
