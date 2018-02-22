@@ -1,9 +1,9 @@
 import { ObjectId } from 'mongodb'
 
-const exampleApi = (app, db) => {
-  const examples = db.collection('example')
+const counterApi = (app, db) => {
+  const counter = db.collection('counter')
 
-  app.get('/example/:id', (req, res) => {
+  app.get('/counter/:id', (req, res) => {
     const id = { _id: new ObjectId(req.params.id) }
     examples.findOne(id, (err, item) => {
       if (err) { res.send({ 'error': 'an error occurred' }) }

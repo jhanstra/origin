@@ -4,6 +4,7 @@
   "description": "app-description###",
   "main": "server/server.js",
   "scripts": {
+    "build-client": "parcel client/index.html",
     "build-server": "rimraf dist/ && babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start-server": "rimraf dist/ && nodemon server.js --exec babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "run start-server",
@@ -17,8 +18,10 @@
   "author": "jhanstra",
   "license": "ISC",
   "dependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "hyperapp": "^1.1.2",
     "mongodb": "^3.0.2",
     "rimraf": "^2.6.2"
   },

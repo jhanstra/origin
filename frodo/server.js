@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb'
 import bodyParser from 'body-parser'
 
 import { exampleApi } from './server/routes'
-import { url } from './config/example.db' // remove example. from this
+import { url } from './config/example.db' // remove 'example.' from this
 
 const app = express();
 

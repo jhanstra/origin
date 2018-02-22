@@ -27,6 +27,7 @@ The goal of this project is to continually evolve based on best practices and ne
 - **[Parcel](https://parceljs.org/)**
 - **CSS in JS Framework / Helper Functions**
 - **[Prepack](https://prepack.io/)**
+- **[Hyperapp](https://github.com/hyperapp/hyperapp)**
 - **Sentry**
 - **Flow**
 - **Prettier**
