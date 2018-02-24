@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb'
 import bodyParser from 'body-parser'
 
 import { exampleApi } from './server/routes'
-import { url } from './config/example.db' // remove 'example.' from this
+import { url } from './config/db'
 
 const app = express();
 
@@ -17,7 +17,7 @@ MongoClient.connect(url, (err, client) => {
   exampleApi(app, db)
 
   app.listen(port, () => {
-    console.log('We are live on ' + port)
+    console.log('server started on port ' + port)
   })
 })
 

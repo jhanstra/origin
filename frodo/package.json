@@ -1,18 +1,18 @@
 {
-  "name": "app-name",
+  "name": "origin--name",
   "version": "0.0.1",
-  "description": "app-description###",
+  "description": "origin--description",
   "main": "server/server.js",
   "scripts": {
-    "build-client": "parcel client/index.html",
+    "client": "parcel client/index.html",
     "build-server": "rimraf dist/ && babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start-server": "rimraf dist/ && nodemon server.js --exec babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "server": "rimraf dist/ && nodemon server.js --exec babel-node --presets es2015,stage-2 --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "start": "run start-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "### https://github.com/jhanstra/app-name.git"
+    "url": "https://github.com/jhanstra/origin--name.git"
   },
   "keywords": [],
   "author": "jhanstra",
